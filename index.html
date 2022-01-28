@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import de mon CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Import du package AXIOS dans le front, permet l'envoi de requêtes POST -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Import de mon JS  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Import de la police Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Formulaire de contact</title>
+  </head>
+  <body>
+    <form id="contactForm">
+      <h1>Formulaire de contact</h1>
+      <input type="text" id="firstName" placeholder="Prénom" />
+      <input type="text" id="lastName" placeholder="Nom" />
+      <input type="text" id="email" placeholder="user@mail.com" />
+      <input type="text" id="subject" placeholder="Sujet" />
+      <textarea
+        type="text"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Votre message ici..."
+      ></textarea>
+      <button type="submit" id="submit">Envoyer le message</button>
+    </form>
+  </body>
+</html>

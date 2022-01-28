@@ -5,8 +5,12 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #7359dc;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    156deg,
+    rgba(155, 217, 213, 1) 0%,
+    rgba(0, 128, 120, 1) 99%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,21 +18,23 @@ body {
 }
 
 form {
+  font-family: "Montserrat", sans-serif;
   width: 500px;
   height: 696px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: #dbd7d7;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px -1px black;
 }
 
 form h1 {
-  font-size: 25px;
-  font-weight: 700;
-  margin-top: 59px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 38px;
 }
 
 form input {
@@ -38,26 +44,46 @@ form input {
   border-color: #e5e5e517;
   margin: 10px 0;
   padding: 0 5px;
+  transition: 0.3s ease;
+}
+
+form input:hover {
+  border-color: rgba(155, 217, 213, 0.603);
 }
 
 #message {
+  font-family: "Montserrat", sans-serif;
   height: 200px;
   width: 420px;
   padding: 5px 5px;
+  margin: 10px 0;
   border-radius: 5px;
   resize: none;
+  border-color: #e5e5e5a8;
+  transition: 0.3s ease;
+}
+
+#message:hover {
+  border-color: rgba(1, 161, 151, 0.993);
 }
 
 #submit {
+  font-family: "Montserrat", sans-serif;
   width: 420px;
   height: 40px;
   border-radius: 5px;
-  border-color: #7359dc5e;
-  background-color: #7359dc;
+  border-color: #00807842;
+  background-color: rgb(48 147 140);
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   height: 50px;
   margin-bottom: 41px;
   margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: rgba(48, 147, 140, 0.699);
+  cursor: pointer;
 }

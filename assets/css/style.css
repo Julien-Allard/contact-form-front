@@ -12,6 +12,7 @@ body {
     rgba(0, 128, 120, 1) 99%
   );
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -72,7 +73,7 @@ form input:hover {
   width: 420px;
   height: 40px;
   border-radius: 5px;
-  border-color: #00807842;
+  border-color: #00807700;
   background-color: rgb(48 147 140);
   color: white;
   font-size: 20px;
@@ -86,4 +87,23 @@ form input:hover {
 #submit:hover {
   background-color: rgba(48, 147, 140, 0.699);
   cursor: pointer;
+}
+
+.link {
+  margin: 30px 0;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.link i {
+  margin-right: 5px;
+}
+
+.link a:hover {
+  color: white;
 }

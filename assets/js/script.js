@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
 
-      const response = await axios.post("http://localhost:4000/form", data);
+      const response = await axios.post(
+        "https://contact-form-le-reacteur.herokuapp.com/form",
+        data
+      );
     });
 });

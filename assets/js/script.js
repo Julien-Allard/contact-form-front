@@ -16,6 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
           "https://contact-form-le-reacteur.herokuapp.com/form",
           data
         );
+        // console.log(response.data);
+        document.querySelector("#confirm-message").innerHTML =
+          response.data.message;
+
+        if (response.data) {
+          const allInputs = document.getElementsByTagName("input");
+          for (let i = 0; i < allInputs.length; i++) {
+            allInputs[i].value = "";
+          }
+          document.querySelector("#message").value = "";
+        }
       } catch (error) {
         console.log("ERROR ==> ", error.message);
         console.log("ERROR RESPONSE ==> ", error.response);

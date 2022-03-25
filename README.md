@@ -5,8 +5,6 @@
 A little project for a simple contact form.
 Fill the inputs and the back-end (hosted in another depository) will send a mail directly on my inbox with the informations you provided.
 
-### You can try it here : https://simple-contact-form-julalldev.netlify.app/
-
 ## Frontend was made with :
 
 - HTML
